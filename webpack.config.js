@@ -16,7 +16,7 @@ module.exports = {
       // Con path.resolve podemos decir dónde va estar la carpeta y la ubicación del mismo
       path: path.resolve(__dirname, "dist"),
       // filename le pone el nombre al archivo final
-      filename: "main.j[name].[contenthash].js",
+      filename: "[name].[contenthash].js",
       assetModuleFilename: 'assets/images/[hash][ext][query]',
     },
     resolve: {
@@ -66,9 +66,9 @@ module.exports = {
                 // limit => limite de tamaño
                 limit: 10000,
                 // Mimetype => tipo de dato
-                mimetype: "application/font-woff",
+                mimetype: "aplication/font-woff",
                 // name => nombre de salida
-                name: "[name].[contenthash]",
+                name: "[name].[contenthash].[ext]",
                 // outputPath => donde se va a guardar en la carpeta final
                 outputPath: "./assets/fonts/",
                 publicPath: "../assets/fonts/",
